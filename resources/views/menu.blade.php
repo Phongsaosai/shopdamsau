@@ -4,7 +4,7 @@
     @include('head')
 </head>
 
-<body class="animsition">
+<body class="">
 
 <!-- Header -->
 <header>

@@ -14,7 +14,7 @@
                 <img src="/template/admin/dist/img/kientruc.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">DAU-Kiến Trúc Đà Nẵng</a>
+                <a href="https://dau.edu.vn/" class="d-block">DAU-Kiến Trúc Đà Nẵng</a>
             </div>
         </div>
 

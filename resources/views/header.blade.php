@@ -7,7 +7,7 @@
 
             <!-- Logo desktop -->
             <a href="/" style="font-size: 30pt" class="logo">
-                <p style="font-style: italic; font-size: 30pt; color: #0C1021">ĐẬM SÂU SHOP</p>
+                <p style="font-size: 30pt; color: #ff00f4; background-color: #6307ff">LAPTOP Đậm Sâu</p>
 {{--                <img src=""/>--}}
             </a>
 
@@ -29,7 +29,8 @@
                     <i class="zmdi zmdi-search"></i>
                 </div>
 
-                <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="2">
+                <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+                     data-notify="{{count(\Illuminate\Support\Facades\Session::get('carts'))}}">
                     <i class="zmdi zmdi-shopping-cart"></i>
                 </div>
             </div>
@@ -41,7 +42,7 @@
 <div class="wrap-header-mobile">
     <!-- Logo moblie -->
     <div class="logo-mobile">
-        <a HREF="/" style="font-size: 90pt"><h1>ĐẬM SÂU SHOP</h1></a>
+        <p style="font-size: 30pt; color: #ff00f4; background-color: #6307ff">LAPTOP Đậm Sâu</p>
     </div>
 
     <!-- Icon header -->

@@ -48,8 +48,17 @@ Route::middleware(['auth'])->group(function () {
         Route::post('upload/service', [\App\Http\Controllers\Admin\UpdateController::class, 'store']);
     });
 });
+
+
 Route::get('/',[\App\Http\Controllers\MainController::class, 'index']);
 Route::post('/services/load-product', [\App\Http\Controllers\MainController::class, 'loadProduct']);
 
 Route::get('danh-muc/{id}-{slug}.html', [\App\Http\Controllers\MenuController::class, 'index']);
+Route::get('san-pham/{id}-{slug}.html', [\App\Http\Controllers\ProductController::class, 'index']);
+
+Route::post('add-cart', [\App\Http\Controllers\CartController::class, 'index']);
+Route::get('carts', [\App\Http\Controllers\CartController::class, 'show']);
+Route::post('update-cart', [\App\Http\Controllers\CartController::class, 'update']);
+Route::get('carts/delete/{id}', [\App\Http\Controllers\CartController::class, 'remove']);
+Route::post('carts', [\App\Http\Controllers\CartController::class, 'addCart']);
 
